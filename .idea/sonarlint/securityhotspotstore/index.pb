@@ -15,3 +15,7 @@ M
 data_structures/src/User.java,8/2/8222f4fb3d721a5dec8e88cb5a1cfcdf7662bd7f
 F
 generics/src/Main.java,a/9/a97b938727b653b25e950922d5c40fe9c3ee8f40
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Y
+)course_01/src/com/wideweb/RentalCalc.java,6/5/6527d2cd7f2d130e55b883afe087fc77ab2a4a43
