@@ -1,0 +1,44 @@
+
+Z
+java:S1854M"8Remove this useless assignment to local variable "edad".(¾êÔÿÿÿÿÿÿ8ì³¯À1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(óÎ¹Ğ8ì³¯À1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(†™ñ‹8í³¯À1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ıŠˆæıÿÿÿÿ8í³¯À1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ùÄş¾úÿÿÿÿ8í³¯À1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¸ø“»ùÿÿÿÿ8í³¯À1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(×ºß‹ùÿÿÿÿ8í³¯À1
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(ÆŸüºÿÿÿÿÿ8í³¯À1
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(÷¹˜Ğøÿÿÿÿ8í³¯À1
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(¢£Äıÿÿÿÿ8í³¯À1
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(¢£Äıÿÿÿÿ8í³¯À1
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(ÆŸüºÿÿÿÿÿ8î³¯À1
+U	java:S106("9Replace this use of System.out or System.err by a logger.(õÉÓ­8î³¯À1
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(µ­ Şıÿÿÿÿ8î³¯À1
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(¨“¡ıúÿÿÿÿ8î³¯À1
+U	java:S106."9Replace this use of System.out or System.err by a logger.(¢…Ã8î³¯À1
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(¢…Ã8î³¯À1
+X	java:S125/"<This block of commented-out lines of code should be removed.(¾¥¯Ë8î³¯À1
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(È„‹…øÿÿÿÿ8î³¯À1
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(©üÄšøÿÿÿÿ8î³¯À1
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(°·¨ç8ï³¯À1
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(‘Æ¸ş8ï³¯À1
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(½‹·êıÿÿÿÿ8ï³¯À1
+U	java:S106="9Replace this use of System.out or System.err by a logger.(é¥Öô8ï³¯À1
+U	java:S106>"9Replace this use of System.out or System.err by a logger.(à¢®œ8ï³¯À1
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(‰£Ô¬øÿÿÿÿ8ï³¯À1
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(¨Œëªüÿÿÿÿ8ğ³¯À1
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(³·Ş¾8ğ³¯À1
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(ßÉ¡çûÿÿÿÿ8ğ³¯À1
+[
+java:S1612F"9Replace this lambda with method reference 'String::trim'.(ßÉ¡çûÿÿÿÿ8ñ³¯À1
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(ËĞ˜í8ñ³¯À1
+K
+java:S1481M")Remove this unused "edad" local variable.(¾êÔÿÿÿÿÿÿ8ñ³¯À1
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(¿¾‘8ò³¯À1
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(öŒÃØÿÿÿÿÿ8ò³¯À1
+H
+java:S1128"+Remove this unused import 'java.time.Year'.(Èƒœ¦8´Ó°À1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8´Ó°À1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8´Ó°À1
