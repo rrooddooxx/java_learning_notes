@@ -1,17 +1,17 @@
 
 w
-java:S3740"/Provide the parametrized type for this generic.(Ô¢’óýÿÿÿÿ8šøë€ì1J$59e9df3d-5265-488a-b740-95d0c151896f
+java:S3740"/Provide the parametrized type for this generic.(Ô¢’óýÿÿÿÿ8šøë€ì1J$d7def4dc-45f0-4234-ac5d-756959298fc2
 w
-java:S3740"/Provide the parametrized type for this generic.(Ô¢’óýÿÿÿÿ8›øë€ì1J$63a808eb-2dcb-4e3e-8e1a-a76d0d3caa9f
+java:S3740"/Provide the parametrized type for this generic.(Ô¢’óýÿÿÿÿ8›øë€ì1J$538e6040-7acf-4b74-a209-bcf5ea546a17
 ˆ
-java:S1854%"@Remove this useless assignment to local variable "listaNombres".(ÂÍÎçþÿÿÿÿ8žøë€ì1J$02141fbf-5f70-4041-b2db-43d85d166a92
-r	java:S106"+Replace this use of System.out by a logger.(‡»™Ûøÿÿÿÿ8 øë€ì1J$14cfe63e-c68a-446c-9442-588832643d1a
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ïæ·Žùÿÿÿÿ8¡øë€ì1J$3702861f-5cdf-4bca-86b9-fe0c3d960016
-m	java:S106""+Replace this use of System.out by a logger.(Š²¦½8¢øë€ì1J$e0918228-1475-472f-a0b8-1caa2d083206
+java:S1854%"@Remove this useless assignment to local variable "listaNombres".(ÂÍÎçþÿÿÿÿ8žøë€ì1J$4e6f3748-ba2f-4b5d-bf01-24bfdab054ea
+r	java:S106"+Replace this use of System.out by a logger.(‡»™Ûøÿÿÿÿ8 øë€ì1J$0b57842d-c2fb-401c-8cee-6afe8d2c3252
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ïæ·Žùÿÿÿÿ8¡øë€ì1J$174c27af-28dd-4c3d-894e-ad14780c45a8
+m	java:S106""+Replace this use of System.out by a logger.(Š²¦½8¢øë€ì1J$ed600fa4-1070-47e8-831c-715039664610
 y
-java:S1481%"1Remove this unused "listaNombres" local variable.(ÂÍÎçþÿÿÿÿ8£øë€ì1J$0ded29ec-c2af-4073-8193-ebcc2901c571
-m	java:S106*"+Replace this use of System.out by a logger.(‰€âñ8¤øë€ì1J$ecb4544e-2e41-46d0-a61b-9fac9ab42580
-r	java:S1060"+Replace this use of System.out by a logger.(ò˜êèúÿÿÿÿ8¤øë€ì1J$0754d603-4d67-4a9e-807a-198c466e8a4e
-m	java:S1064"+Replace this use of System.out by a logger.(·©¢í8¥øë€ì1J$e2f73123-701e-4670-9403-c6c480afd18f
-m	java:S1069"+Replace this use of System.out by a logger.(’Ä—à8”ªñ€ì1J$dfdf49e7-1359-4d1a-b1f9-a73dc6766635
-m	java:S106="+Replace this use of System.out by a logger.(Î¢ƒ¿8•ªñ€ì1J$6485f4dd-7419-4d82-9043-4ac906ed5da5
+java:S1481%"1Remove this unused "listaNombres" local variable.(ÂÍÎçþÿÿÿÿ8£øë€ì1J$93e6d5a9-90da-41fc-8ced-c3ad7be51faf
+m	java:S106*"+Replace this use of System.out by a logger.(‰€âñ8¤øë€ì1J$bb7e0ab7-28a1-43c6-a1ed-40fa4bb85c0e
+r	java:S1060"+Replace this use of System.out by a logger.(ò˜êèúÿÿÿÿ8¤øë€ì1J$d1c91ea7-23d1-4f40-a823-ee174f125cb5
+m	java:S1064"+Replace this use of System.out by a logger.(·©¢í8¥øë€ì1J$12997553-3dc9-4d0a-802b-a9fdf18c0cf2
+m	java:S1069"+Replace this use of System.out by a logger.(’Ä—à8”ªñ€ì1J$347572e1-6f70-46e2-8b88-cf4969e836f3
+m	java:S106="+Replace this use of System.out by a logger.(Î¢ƒ¿8•ªñ€ì1J$8cdb5a41-6b80-46f1-b04e-8a89262209f2

@@ -119,9 +119,40 @@ Se definen con el operador de diamantes `<>`
        ````
     2. Generic Type Parameter para ser utilizado como tipado del retorno del método. El mismo
        genérico del parámetro del método es también usado para tipar su retorno.
-       ````java
-       // ejemplo retorna el mismo tipo:
-       public static <T> T getReturnedAsIs(T element)
-       // ejemplo retorna una lista que contiene el mismo tipo:
-       public static <T> List<T> getReturnedAsList(T[] arr)
-      ````
+        ```java
+           // ejemplo retorna el mismo tipo:
+           public static <T> T getReturnedAsIs(T element)
+           // ejemplo retorna una lista que contiene el mismo tipo:
+           public static <T> List<T> getReturnedAsList(T[] arr)
+          ```
+
+6. **Bounded Type Parameters**
+
+   Sirven para acotar una definición genérica. Es decir, dado un generic type parameter `<T>`,
+   podemos
+   decir que este type parameter sólo funcione para ciertos tipos de datos.
+
+   Esto se hace en base a una suerte de "herencia" y/o afinidad. Digamos que que el genérico
+   `<T>` sólo debería funcionar para la familia de la interfaz List y sus implementaciones, pero
+   no para otras estructuras de datos que no desciendan de List,
+   podríamos decir: `<T extends List>`
+
+    ```java
+    // Ejemplos:
+    // 1. 
+    static <T extends Comparable<T>> int countGreaterThan(T[] nums, T min)
+    {
+        int finalCount = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i].compareTo(min) > 0) finalCount++;
+        }
+        return finalCount;
+    }
+
+    // 2. 
+    static <T extends List<V>, V> void printsListsOnly(T list)
+    {
+        list.forEach(System.out::println);
+    }
+
+    ```
