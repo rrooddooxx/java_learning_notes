@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -19,6 +20,9 @@ public class BoundedTypeParams {
         Set<String> setWords = new HashSet<>(Set.of("Hello", "World"));
         printsListsOnly(listWords);
         printsListsOnly(setWords);
+
+        List<String> anotherListForChristsSake = new ArrayList<>(Arrays.asList("Bye", "Byex"));
+        multipleBoundsToComply(anotherListForChristsSake);
     }
 
     static <T extends Comparable<T>> int countGreaterThan(T[] nums, T min)
@@ -34,5 +38,13 @@ public class BoundedTypeParams {
     {
         list.forEach(System.out::println);
     }
+
+    // MULTIPLE BOUNDS
+
+    static <T extends Collection<V> & List<V>, V> void multipleBoundsToComply(T param)
+    {
+        System.out.println(param);
+    }
+
 
 }

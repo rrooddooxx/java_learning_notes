@@ -52,7 +52,7 @@ Se definen con el operador de diamantes `<>`
     <T>: "Type"
     ````
 
-4. **Usando _generics_ en clases.**
+4. **Usando _generics_ en clases**: [➡️ EJERCICIOS](./generics/src/Main.java)
 
     ```java
     public class Box<T> {
@@ -103,7 +103,7 @@ Se definen con el operador de diamantes `<>`
    polimorfismo, utilizando la interfaz Shape en común para los objetos de Rectangle y Circle_
 
 
-5. **Genéricos y métodos**
+5. **Genéricos y métodos**: [➡️ EJERCICIOS](./generics/src/GenericsAndMethods.java)
 
    Definiendo tipos de datos genéricos en la implementación de un método:
 
@@ -127,32 +127,63 @@ Se definen con el operador de diamantes `<>`
           ```
 
 6. **Bounded Type Parameters**
+   [➡️ EJERCICIOS](./generics/src/BoundedTypeParams.java)
 
-   Sirven para acotar una definición genérica. Es decir, dado un generic type parameter `<T>`,
-   podemos
-   decir que este type parameter sólo funcione para ciertos tipos de datos.
+    1. _Simple Bounded Type:_
 
-   Esto se hace en base a una suerte de "herencia" y/o afinidad. Digamos que que el genérico
-   `<T>` sólo debería funcionar para la familia de la interfaz List y sus implementaciones, pero
-   no para otras estructuras de datos que no desciendan de List,
-   podríamos decir: `<T extends List>`
+       Sirven para acotar una definición genérica. Es decir, dado un generic type parameter `<T>`,
+       podemos
+       decir que este type parameter sólo funcione para ciertos tipos de datos.
 
-    ```java
-    // Ejemplos:
-    // 1. 
-    static <T extends Comparable<T>> int countGreaterThan(T[] nums, T min)
-    {
-        int finalCount = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i].compareTo(min) > 0) finalCount++;
+       Esto se hace en base a una suerte de "herencia" y/o afinidad. Digamos que que el genérico
+       `<T>` sólo debería funcionar para la familia de la interfaz List y sus implementaciones, pero
+       no para otras estructuras de datos que no desciendan de List,
+       podríamos decir: `<T extends List>`
+
+        ```java
+        // Ejemplos:
+        // 1. 
+        static <T extends Comparable<T>> int countGreaterThan(T[] nums, T min)
+        {
+            int finalCount = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i].compareTo(min) > 0) finalCount++;
+            }
+            return finalCount;
         }
-        return finalCount;
-    }
+ 
+        // 2. 
+        static <T extends List<V>, V> void printsListsOnly(T list)
+        {
+            list.forEach(System.out::println);
+        }
+ 
+        ```
 
-    // 2. 
-    static <T extends List<V>, V> void printsListsOnly(T list)
-    {
-        list.forEach(System.out::println);
-    }
+    2. _Multiple Bounded Types:_
 
-    ```
+       Acotan aún más lo que debe cumplir el genérico, pudiendo concatenar clases e interfaces para
+       este propósito. Se utiliza el operador `&` para concatenar los tipos.
+
+       La sintaxis es `<T extends Clase & Interfaz & ...>`
+   > Importante: Si se mezclan clases e interfaces, las clases siempre deberán ser el primer
+   > argumento del Bounded Type, y sólo puede ser una clase, pero no hay problema con múltiples
+   > interfaces.
+
+      ````java
+      // MULTIPLE BOUNDS
+
+      static <T extends Collection<V> & List<V>, V> void multipleBoundsToComply(T param)
+      {
+          System.out.println(param);
+      }
+   
+      // 👍
+      List<String> anotherListForChristsSake = new ArrayList<>(Arrays.asList("Bye", "Byex"));
+      multipleBoundsToComply(anotherListForChristsSake); // esto funciona! porque anotherListForChristsSake cumple todo lo solicitado en el genérico.
+   
+      // 👎
+      Set<String> anotherMapForChristsSake = new ArrayList<>(Arrays.asList("Bye", "Byex"));
+      multipleBoundsToComply(anotherMapForChristsSake);
+      // esto no funciona, porque un Set<String> sólo cumple el requisito de Collection pero no el de List
+      ````
