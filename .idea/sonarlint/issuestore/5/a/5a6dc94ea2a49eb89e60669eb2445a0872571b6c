@@ -1,8 +1,7 @@
 
-‰
-java:S1192"FDefine a constant instead of duplicating this literal "Hello" 3 times.(°ƒ¿…8î‘Üˆì1J$c183ef2c-5a95-405a-b444-e85087618d37
-r	java:S106"+Replace this use of System.out by a logger.(É«ùøÿÿÿÿ8ù‘Üˆì1J$8dbd1dd4-c5ef-4d9d-9dce-f9a2e3f1448e
-r	java:S106"+Replace this use of System.out by a logger.(´¿§…şÿÿÿÿ8ù‘Üˆì1J$519bd26c-2dc3-440e-992c-74a16d338692
-m	java:S106"+Replace this use of System.out by a logger.(°ƒ¿…8ú‘Üˆì1J$11141e27-744b-4aea-84ac-d33b47037b62
-r	java:S106)"+Replace this use of System.out by a logger.(­¸¤Êúÿÿÿÿ8ü‘Üˆì1J$81aed512-de2b-4804-904e-5a76cd79f979
-m	java:S1060"+Replace this use of System.out by a logger.(Ô‘³8ı‘Üˆì1J$0f638ecf-6fcd-4569-8773-d31c75a6ad05
+~	java:S125	"<This block of commented-out lines of code should be removed.(¬È¡8è ¹¨ì1J$7ce3af81-468f-42ec-b83e-d4866d69718f
+r	java:S106>"+Replace this use of System.out by a logger.(­¸¤Êúÿÿÿÿ8ë ¹¨ì1J$aecca3a6-904e-4a04-a516-bc66a6cd90ff
+m	java:S106F"+Replace this use of System.out by a logger.(Ô‘³8ë ¹¨ì1J$e79c29c9-2bac-4b60-8cf7-849198969323
+l	java:S106P"+Replace this use of System.out by a logger.(Ûê×b8ì ¹¨ì1J$cb6a7fa8-c10d-4c63-be00-bdb4b22515f0
+r	java:S106W"+Replace this use of System.out by a logger.(¦¥àşÿÿÿÿ8ì ¹¨ì1J$f8910191-1012-48b8-9d59-065c25e48b6b
+r	java:S106^"+Replace this use of System.out by a logger.(¦¥àşÿÿÿÿ8ì ¹¨ì1J$711ccba1-495b-443d-80c3-77231286637c

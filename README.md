@@ -128,7 +128,11 @@ Se definen con el operador de diamantes `<>`
 
 6. **Bounded Type Parameters**
    [➡️ EJERCICIOS](./generics/src/BoundedTypeParams.java)
-
+   > In the context of Java generics, a "bound" refers to a restriction placed on a type parameter.
+   It specifies the types that can be used as arguments for a type parameter in a generic class,
+   interface, or method. Bounds are used to enforce type safety by ensuring that the generic type
+   meets certain criteria, such as being a subclass of a particular class or implementing a
+   particular interface.
     1. _Simple Bounded Type:_
 
        Sirven para acotar una definición genérica. Es decir, dado un generic type parameter `<T>`,
@@ -151,13 +155,13 @@ Se definen con el operador de diamantes `<>`
             }
             return finalCount;
         }
- 
+
         // 2. 
         static <T extends List<V>, V> void printsListsOnly(T list)
         {
             list.forEach(System.out::println);
         }
- 
+
         ```
 
     2. _Multiple Bounded Types:_
@@ -173,7 +177,7 @@ Se definen con el operador de diamantes `<>`
       ````java
       // MULTIPLE BOUNDS
 
-      static <T extends Collection<V> & List<V>, V> void multipleBoundsToComply(T param)
+      static <T extends Collections & List<V>, V> void multipleBoundsToComply(T param)
       {
           System.out.println(param);
       }
@@ -187,3 +191,48 @@ Se definen con el operador de diamantes `<>`
       multipleBoundsToComply(anotherMapForChristsSake);
       // esto no funciona, porque un Set<String> sólo cumple el requisito de Collection pero no el de List
       ````
+    3. Unbounded Wildcard
+
+       Se escribe con la sintaxis `<?>`. Permite definir un tipo genérico para dato desconocido,
+       permitiendo cualquier que cualquier tipo de dato sea utilizado.
+          ````java
+          // ejemplo:
+          static void printLists(List<?> list)
+       ````
+    4. Upper Bounded Wildcard
+       > Fija un "límite superior" (limita arriba), es decir, permite usar tipos que sean el mismo ó
+       los que están "hacia abajo" (subclases)
+
+       > _"Type Set Direction: The set of acceptable types is "bounded above" by the specified type.
+       That is, it includes the bound itself and any types that are "below" it in the hierarchy (
+       subtypes)."_
+
+       Sintaxis: `<T extends SubClass>` o `<T extends Interface>`
+
+       ```java
+         // UPPER BOUNDS + WILDCARDS
+         // Sólo aceptará los tipos que sean Number ó desciendan de él
+         static void upperBounds(List<? extends Number> numberList)
+         {
+             System.out.println(numberList);
+         }
+       ```
+
+    5. Lower Bounded Wildcard
+       > Fija un "límite inferior" (limita abajo), es decir, permite usar tipos que sean el mismo
+       ó los que están "hacia arriba" en la jerarquía (superclases)
+
+       > _"Type Set Direction: The set of acceptable types is "bounded below" by the specified type.
+       This means it includes the bound itself and any types that are "above" it in the hierarchy (
+       supertypes)."_
+
+       Sintaxis: `<? super SuperClass>`
+
+        ```java
+        // LOWER BOUNDS + WILDCARDS
+       // Sólo aceptará Number o superclases de Number
+       static void lowerBounds(List<? super Number> numberList)
+       {
+            System.out.println(numberList);
+       }
+        ``` 
