@@ -41,6 +41,24 @@ public class Main {
         mapOfFlags.put("wasExecuted", false);
         System.out.println(mapOfFlags);
 
+        // EJ4.
+
+        Box<Phone> boxOfPhones = new Box<>();
+        boxOfPhones.setState(new Phone("Nokia"));
+        System.out.println(boxOfPhones.getState());
+
+        Box<Letter> boxOfLetters = new Box<>();
+        boxOfLetters.setState(new Letter("Seba"));
+        System.out.println(boxOfLetters.getState());
+
+        // EJ5.
+        Box<Shape> boxOfRectangles = new Box<>();
+        boxOfRectangles.setState(new Rectangle("rectángulo", 22.0, 12.4));
+        System.out.println(boxOfRectangles.getState());
+
+        Box<Shape> boxOfCircles = new Box<>();
+        boxOfCircles.setState(new Circle("circulito", 22.0));
+        System.out.println(boxOfCircles.getState());
 
     }
 }

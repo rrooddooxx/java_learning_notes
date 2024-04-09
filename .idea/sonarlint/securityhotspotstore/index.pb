@@ -19,3 +19,21 @@ F
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 Y
 )course_01/src/com/wideweb/RentalCalc.java,6/5/6527d2cd7f2d130e55b883afe087fc77ab2a4a43
+E
+generics/src/Box.java,f/1/f1266aeb70e9be986ab4813252b3a55b28ca0ae3
+G
+generics/src/Phone.java,7/6/7696f5b124de6ad0327da9c3fb715cdb9a772060
+H
+generics/src/Letter.java,5/e/5e12b609e13c8b59f8efe143dd71afc4a1d321ef
+G
+generics/src/Shape.java,e/3/e307c8e7d7e4897bb57352801e9806ca2256f872
+K
+generics/src/Rectangle.java,5/0/50ac6c55be110ddda3932817e1b06bfb5bc87344
+H
+generics/src/Circle.java,f/4/f43de434d34a9f68938821db80bfa1b84ed88ff0
+P
+ generics/GenericsAndMethods.java,2/1/21cc7c618484677dc29b377a4c4fe41cfcb33c6e
+E
+generics/generics.iml,3/f/3ff639f114267035abdc006bfcd91626fa0bbe48
+T
+$generics/src/GenericsAndMethods.java,e/d/ed105f472cdd6c1f0258c1264fe37e60b91c79af

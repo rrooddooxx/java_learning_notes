@@ -1,13 +1,17 @@
 
 w
-java:S3740"/Provide the parametrized type for this generic.(Ô¢’óıÿÿÿÿ8‡İÿüë1J$e6fb2491-ffce-450a-9543-4ed3faba6dce
+java:S3740"/Provide the parametrized type for this generic.(Ô¢’óıÿÿÿÿ8šøë€ì1J$59e9df3d-5265-488a-b740-95d0c151896f
 w
-java:S3740"/Provide the parametrized type for this generic.(Ô¢’óıÿÿÿÿ8‡İÿüë1J$444c691a-cf92-4391-b4db-e864c12fe2fb
+java:S3740"/Provide the parametrized type for this generic.(Ô¢’óıÿÿÿÿ8›øë€ì1J$63a808eb-2dcb-4e3e-8e1a-a76d0d3caa9f
 ˆ
-java:S1854%"@Remove this useless assignment to local variable "listaNombres".(ÂÍÎçşÿÿÿÿ8Œİÿüë1J$0436add7-6c13-47af-a6ef-3ce0d2d5cab1
-r	java:S106"+Replace this use of System.out by a logger.(‡»™Ûøÿÿÿÿ8İÿüë1J$e7975150-3858-4ec4-b441-4a305169dcbe
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ïæ·ùÿÿÿÿ8İÿüë1J$7017ff8a-d16a-48cc-a418-2f3a46127181
-m	java:S106""+Replace this use of System.out by a logger.(Š²¦½8İÿüë1J$38a260da-b4e9-4507-8aba-47197351508d
+java:S1854%"@Remove this useless assignment to local variable "listaNombres".(ÂÍÎçşÿÿÿÿ8øë€ì1J$02141fbf-5f70-4041-b2db-43d85d166a92
+r	java:S106"+Replace this use of System.out by a logger.(‡»™Ûøÿÿÿÿ8 øë€ì1J$14cfe63e-c68a-446c-9442-588832643d1a
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ïæ·ùÿÿÿÿ8¡øë€ì1J$3702861f-5cdf-4bca-86b9-fe0c3d960016
+m	java:S106""+Replace this use of System.out by a logger.(Š²¦½8¢øë€ì1J$e0918228-1475-472f-a0b8-1caa2d083206
 y
-java:S1481%"1Remove this unused "listaNombres" local variable.(ÂÍÎçşÿÿÿÿ8’İÿüë1J$36208f47-8f8b-4d67-8848-f9286be55d25
-G	java:S106*"+Replace this use of System.out by a logger.(‰€âñ8µÏıë1
+java:S1481%"1Remove this unused "listaNombres" local variable.(ÂÍÎçşÿÿÿÿ8£øë€ì1J$0ded29ec-c2af-4073-8193-ebcc2901c571
+m	java:S106*"+Replace this use of System.out by a logger.(‰€âñ8¤øë€ì1J$ecb4544e-2e41-46d0-a61b-9fac9ab42580
+r	java:S1060"+Replace this use of System.out by a logger.(ò˜êèúÿÿÿÿ8¤øë€ì1J$0754d603-4d67-4a9e-807a-198c466e8a4e
+m	java:S1064"+Replace this use of System.out by a logger.(·©¢í8¥øë€ì1J$e2f73123-701e-4670-9403-c6c480afd18f
+m	java:S1069"+Replace this use of System.out by a logger.(’Ä—à8”ªñ€ì1J$dfdf49e7-1359-4d1a-b1f9-a73dc6766635
+m	java:S106="+Replace this use of System.out by a logger.(Î¢ƒ¿8•ªñ€ì1J$6485f4dd-7419-4d82-9043-4ac906ed5da5
