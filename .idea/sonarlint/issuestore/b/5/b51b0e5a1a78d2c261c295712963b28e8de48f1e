@@ -1,15 +1,0 @@
-
-]	java:S125"<This block of commented-out lines of code should be removed.(§© ³úÿÿÿÿ8éË§ŠØ1
-]	java:S125"<This block of commented-out lines of code should be removed.(š¢…ùÿÿÿÿ8êË§ŠØ1
-]	java:S125M"<This block of commented-out lines of code should be removed.(¾êÔÿÿÿÿÿÿ8êË§ŠØ1
-L	java:S106V"+Replace this use of System.out by a logger.(¾‡à‰üÿÿÿÿ8ëË§ŠØ1
-B
-java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8ìË§ŠØ1
-H
-java:S1128"+Remove this unused import 'java.time.Year'.(Èƒœ¦8ìË§ŠØ1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ìË§ŠØ1
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ìË§ŠØ1
-Z
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ìË§ŠØ1
