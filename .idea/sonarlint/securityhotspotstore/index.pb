@@ -39,3 +39,7 @@ T
 $generics/src/GenericsAndMethods.java,e/d/ed105f472cdd6c1f0258c1264fe37e60b91c79af
 S
 #generics/src/BoundedTypeParams.java,5/a/5a6dc94ea2a49eb89e60669eb2445a0872571b6c
+E
+streams/src/Main.java,9/9/990e0ac8d2dd3e1dbc5cf2956ab26043f1fe13fc
+E
+streams/src/User.java,e/3/e370e35bdfa35e48cf52a5c80e3236f5c3059c49

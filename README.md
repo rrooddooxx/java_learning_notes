@@ -4,14 +4,28 @@
 
 ## Data Structures
 
+[➡️ EJERCICIOS](./data_structures/src/Main.java)
+
+- ArrayList (orden de inserción)
+- Stack (last in, first out - _LIFO_)
+- Queue (first in, first out - _FIFO_)
+- LinkedList (orden de inserción)
+- Set (no garantiza orden)
+- Map (orden por llaves)
+
 ## Generics
 
 Se definen con el operador de diamantes `<>`
 
 1. **Nos ayudan reforzar el checkeo de datos en tiempo de compilación.**
 
-   Ejemplo: En una estructura de datos como _ArrayList_ nos permite asegurar qué tipo de datos
-   se almacenarán en esta estructura.
+   Su existencia se relaciona con el riesgo de operaciones de _casting_ en la que el compilador
+   no puede asegurar la integridad del tipado. Los _generics_ tienen su razón de ser sólo para
+   reforzar las reglas del compilador y asegurar la consistencia de los tipos de datos.
+   <br><br>
+
+    - Ejemplo: En una estructura de datos como _ArrayList_ nos permite asegurar qué tipo de datos
+      se almacenarán en esta estructura.
 
     ```java
     // 👎
@@ -26,6 +40,8 @@ Se definen con el operador de diamantes `<>`
     aNumbersList.add(1);
     aNumbersList.add("1"); // el compilador no permitirá esto, seremos notificados por el IDE antes de ejecutar el programa.
     ```
+
+<br>
 
 2. **Para generalizar el tipado de una estructura, existen:**
     1. Type parameters: Son los _placeholders_ que indican en donde debe especificarse un tipo
@@ -43,6 +59,8 @@ Se definen con el operador de diamantes `<>`
    // en la posición V declaramos el tipo Integer
    ``` 
 
+<br>
+
 3. **Convenciones para el nombrado de los type parameters.**
     ````java
     <E>: "Element" -> usado harto en java.lang
@@ -51,6 +69,8 @@ Se definen con el operador de diamantes `<>`
     <N>: "Number"
     <T>: "Type"
     ````
+
+<br>
 
 4. **Usando _generics_ en clases**: [➡️ EJERCICIOS](./generics/src/Main.java)
 
@@ -102,6 +122,7 @@ Se definen con el operador de diamantes `<>`
    _EJ5: En este ejemplo, también estamos poniendo los tipos genéricos al servicio del
    polimorfismo, utilizando la interfaz Shape en común para los objetos de Rectangle y Circle_
 
+<br>
 
 5. **Genéricos y métodos**: [➡️ EJERCICIOS](./generics/src/GenericsAndMethods.java)
 
@@ -125,6 +146,8 @@ Se definen con el operador de diamantes `<>`
            // ejemplo retorna una lista que contiene el mismo tipo:
            public static <T> List<T> getReturnedAsList(T[] arr)
           ```
+
+<br>
 
 6. **Bounded Type Parameters**
    [➡️ EJERCICIOS](./generics/src/BoundedTypeParams.java)
@@ -236,3 +259,45 @@ Se definen con el operador de diamantes `<>`
             System.out.println(numberList);
        }
         ``` 
+
+    6. Diferencias entre _Wildcards_ y _Bounded Type Parameters_:
+        1. La unión de tipos (multiple bounds), sólo se puede con _bounded type parameters_, esto
+           no es posible con _wildcards_:
+           ```java
+           // ejemplo de unión de tipos:
+            static <T extends Collections & AnInterface> void method(T param) {}
+           ```
+        2. Los _bounded type parameters_ sólo tienen upper bound (_extends_), pero no se puede
+           usar el lower bound (_super_), ya que esto es exclusivo de los _wildcards_.
+        3. Los _wildcards_ NO permiten "capturar" un tipo para luego ser reutilizado en el mismo
+           contexto de manera que se conozca su relación con otros tipos. Por ejemplo, no puedes
+           declarar un método que tome un List<?> y luego añadir elementos de ese mismo tipo
+           desconocido a la lista, porque el compilador no puede asegurar el tipo de los elementos
+           de forma segura.
+
+## Streams API
+
+[➡️ EJERCICIOS](./streams/src/Main.java)
+
+Permiten trabajar con un paradigma declarativo y funcional, versus el paradigma imperativo
+clásico de Java.
+
+Esto significa, por ejemplo al recorrer un arreglo, que no debemos hacernos cargo de definir
+paso a paso el algoritmo: iniciar un ciclo, fijar contadores, fijar condiciones de límite, fijar
+condicionales para terminar un recorrido, poblar una lista en base a lo encontrado, etc. En
+cambio, podremos ejecutar las mismas operaciones desde una perspectiva funcional, utilizando
+_funciones lambda_
+
+**Componentes de los streams:**
+
+1. Una colección (_Collections_)
+2. Una serie de operaciones intermedias o "pipes" (_Intermediate Operators_). Estas son las
+   operaciones concatenables, como _map_, _reduce_, _filter_, etc.
+3. Operadores de finalización (_Terminal Operators_). Toman el resultado al final de todas las
+   operaciones y lo almacenan en una estructura de datos apropiada.
+
+> Nota: Para los _ARRAYS_ también podremos utilizar el Streams API, pero no se pueden usar
+> directamente al no pertenecer a la interfaz Collections, en este caso es necesario utilizar el
+> método
+> Arrays.stream()
+
