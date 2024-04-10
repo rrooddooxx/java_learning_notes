@@ -301,3 +301,6 @@ _funciones lambda_
 > método
 > Arrays.stream()
 
+- [Ejercicio comparando implementaciones imperativas v/s declarativas](./streams/src/ExerciseOneStreams.java)
+- [Ejercicio tomando datos separados por coma en un string y llevándolo a objetos procesados por 
+  Streams](./streams/src/ExerciseTwo.java)
